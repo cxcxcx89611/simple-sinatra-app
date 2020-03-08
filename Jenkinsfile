@@ -21,7 +21,7 @@ try {
       ]]) {
         ansiColor('xterm') {
           sh 'cd ..'
-          sh 'mkdir ./REAInfraPlatform_master/artifacts && move ./* !$'
+          sh 'sudo mkdir ./REAInfraPlatform_master/artifacts && move ./* !$'
         }
       }
     }
