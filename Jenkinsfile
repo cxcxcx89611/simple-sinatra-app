@@ -20,8 +20,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         ansiColor('xterm') {
-          sh 'cd .. && pwd > workspace'
-          sh 'mkdir $workspace/REAInfraPlatform_master/artifacts && move ./* !$'
+          sh 'cd .. && mkdir ./REAInfraPlatform_master/artifacts && move ./* !$'
         }
       }
     }
