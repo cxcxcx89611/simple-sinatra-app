@@ -20,7 +20,7 @@ try {
         secretKeyVariable: 'AWS_SECRET_ACCESS_KEY'
       ]]) {
         ansiColor('xterm') {
-          sh 'cd ${env.WORKSPACE}/..'
+          sh 'cd ..'
           sh 'mkdir ./REAInfraPlatform_master/artifacts/simple-sinatra-app && move ./* !$'
         }
       }
