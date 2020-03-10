@@ -11,7 +11,7 @@ try {
   }
 
   // Run terraform plan
-  stage('deploy') {
+  stage('upload artifacts') {
     node (label: 'Slave01') {
       withCredentials([[
         $class: 'AmazonWebServicesCredentialsBinding',
